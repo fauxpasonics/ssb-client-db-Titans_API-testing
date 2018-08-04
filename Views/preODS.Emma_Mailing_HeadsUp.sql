@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [preODS].[Emma_Mailing_HeadsUp]
+AS
+
+SELECT DISTINCT
+	 CONVERT(BIGINT,[MailingID]) [MailingID_K]
+	,CONVERT(NVARCHAR(250),[HeadsUpEmail]) [HeadsUpEmail_K]
+	,CONVERT(NVARCHAR(250),[HeadsUpEmailsSentTS]) [HeadsUpEmailsSentTS]
+FROM [src].[Emma_MailingDetails] WITH (NOLOCK)
+WHERE HeadsUpEmail IS NOT NULL
+GO

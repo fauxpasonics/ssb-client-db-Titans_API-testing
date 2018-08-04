@@ -1,0 +1,30 @@
+CREATE TABLE [src].[Emma_Mailings]
+(
+[SK] [bigint] NULL,
+[ETL__multi_query_value_for_audit] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingType] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendStarted] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingID] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RecipientCount] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingStatus] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountID] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Month] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReplyTo] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Year] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StartedorFinished] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subject] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Disabled] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedTS] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Sender] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PlaintextOnly] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Hour] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ParentMailingID] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FailureMessage] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Day] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendFinished] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Datacenter] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendAt] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SignupFormID] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

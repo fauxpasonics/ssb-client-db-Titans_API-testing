@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [preODS].[Emma_MailingMembers]
+AS
+
+SELECT DISTINCT
+	 CONVERT(BIGINT,[MailingID]) [MailingID_K]
+	,CONVERT(BIGINT,[MemberID]) [MemberID_K]
+	,CONVERT(NVARCHAR(250),[Email]) [Email]
+FROM [src].[Emma_MailingDetails] WITH (NOLOCK)
+WHERE MemberID IS NOT NULL
+GO

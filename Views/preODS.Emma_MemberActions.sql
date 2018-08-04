@@ -1,0 +1,18 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [preODS].[Emma_MemberActions]
+AS
+SELECT DISTINCT
+	CONVERT(DATETIME2,[Timestamp]) [Timestamp_K]
+	,CONVERT(NVARCHAR(255),[Type]) [Type_K]
+	,CONVERT(NVARCHAR(100),[AccountID]) [AccountID_K]
+	,CONVERT(NVARCHAR(100),ISNULL([MemberID], '')) [MemberID_K]
+	,CONVERT(NVARCHAR(500),ISNULL([ResourceURL], '')) [ResourceURL_K]
+	,CONVERT(NVARCHAR(100),ISNULL([SignupFormID], '')) [SignupFormID_K]
+	,CONVERT(NVARCHAR(100),ISNULL([MailingID], '')) [MailingID_K]
+	,CONVERT(NVARCHAR(100),ISNULL([GroupID], '')) [GroupID_K]
+	,CONVERT(NVARCHAR(255),[NewStatus]) [NewStatus]
+FROM [src].[Emma_MemberActions] WITH (NOLOCK)
+GO
